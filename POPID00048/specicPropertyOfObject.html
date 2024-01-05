@@ -1,0 +1,38 @@
+<!-- Write a JavaScript function to check if an object contains a specific property. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific property of an Object</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+   
+  
+
+
+
+
+   function hasProperty(obj, propertyName) {
+    return obj.hasOwnProperty(propertyName);
+}
+
+// Example usage:
+const sampleObject = { 
+    name: "Jovin", 
+    age: 11, 
+    city: "ernakulam" };
+
+const hasNameProperty = hasProperty(sampleObject, "name");
+document.writeln("Does the object have 'name' property? " + hasNameProperty);  // Output: true
+
+const hasGenderProperty = hasProperty(sampleObject, "gender");
+document.writeln("Does the object have 'gender' property? " + hasGenderProperty);  // Output: false
+
+</script>
+</html>

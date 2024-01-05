@@ -1,0 +1,34 @@
+<!-- Write a JavaScript function to check if an array is empty. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the array is empty or not</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    function checkeEmpty(arr) {
+        // Check if the input is an array
+        if(!Array.isArray(arr)) {
+            return " This is not an array"
+        }
+
+        // Check if the array has zero length
+
+        return arr.length === 0;
+    }
+    const emptyArray = [];
+    const nonEmptyArray = [1, 2, 3, 4,5];
+
+    document.write(checkeEmpty(emptyArray));
+
+    
+    document.write(checkeEmpty(nonEmptyArray));
+
+</script>
+</html>

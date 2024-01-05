@@ -1,0 +1,32 @@
+<!-- Write a JavaScript function to sort an array of numbers in ascending order. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascending order in an Array</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    function ascendingOrder(arr) {
+        // Check if the input is an array
+        if(!Array.isArray) {
+            return " this is not an array"
+        }
+ // Use the sort method to sort the array in ascending order
+
+ const sortedArray = arr.slice().sort((a, b) => a-b);
+ return sortedArray;
+
+    }
+
+    const unsortedArray = [2, 5, 10,23, 1, 8];
+    const sortedArray = ascendingOrder(unsortedArray);
+
+    document.write(sortedArray);
+</script>
+</html>

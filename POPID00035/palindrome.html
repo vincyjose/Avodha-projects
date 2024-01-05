@@ -1,0 +1,28 @@
+<!--  Write a JavaScript program to check whether a given string is a palindrome or not. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var string=prompt("Enter a String")
+    var len=string.length
+   // document.write(len)
+   var msg='It is a Palindrome'
+   for(var i=0;i<len/2;i++){
+    if(string[i]!=string[len-1-i]){
+        msg="It is not a Palindrome"
+    }
+   }
+   document.write(`${string}: ${msg}`)
+    
+    
+</script>
+</html>

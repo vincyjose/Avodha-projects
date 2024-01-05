@@ -1,0 +1,34 @@
+<!-- Write a JavaScript function to get the values of an object as an array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Values as an Array</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    const myObject = {
+        name: "Vincy",
+        place: "Ernakulam",
+        age: 35
+    };
+    function objectValuesToArray(obj) {
+        // Check if the input is an object
+if(typeof obj !== 'object' || obj === null) {
+    return 'Input is not an object';
+}
+
+//Use Object.values() to get an array of value
+const valuesArray = Object.values(obj);
+return valuesArray;
+}
+const valuesArray = objectValuesToArray(myObject);
+
+document.writeln(valuesArray);
+</script>
+</html>

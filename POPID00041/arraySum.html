@@ -1,0 +1,28 @@
+
+<!-- Write a JavaScript function to find the sum of all elements in an array. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of all elements in an array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function sumArray(arr) {
+        if(!Array.isArray(arr)) {
+        return "This is not an array";
+        }
+
+        const sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        return sum;
+    }
+
+    const myArray = [1, 2, 3, 4, 5]
+    const result = sumArray(myArray);
+    document.write(result);
+</script>
+</html>

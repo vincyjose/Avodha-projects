@@ -1,0 +1,36 @@
+<!-- Write a JavaScript function to merge two objects into one. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>merging two objects</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const person1 = {
+        name: "vincy",
+        gender: "female"
+    };
+    const person2 = {
+        name: "jose",
+        gender: "male",
+        place: "ernakulam"
+    };
+
+    function mergeObjects(obj1, obj2) {
+        return {...obj1, ...obj2};
+    }
+    const mergedObjects = mergeObjects(person1, person2);
+    console.log(mergedObjects);
+
+//     const mergedObjects = { ...person1, ...person2};
+//     console.log("Merged objects are :" + mergedObjects)
+//  document.write(person2)
+// //  console.log(person1);
+</script>
+</html>

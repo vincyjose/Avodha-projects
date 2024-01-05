@@ -1,0 +1,29 @@
+<!-- Write a JavaScript function to remove a property from an object. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Object Property</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>Remove Object Property</h1>
+
+    <script>
+        // Example usage:
+        let myObject = {
+            name: 'Jo',
+            age: 30,
+            city: 'Banglore'
+        };
+
+        document.write("<p>Before removing property: " + JSON.stringify(myObject) + "</p>");
+
+        removeObjectProperty(myObject, 'age');
+
+        document.write("<p>After removing property: " + JSON.stringify(myObject) + "</p>");
+    </script>
+</body>
+</html>

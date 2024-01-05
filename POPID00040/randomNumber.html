@@ -1,0 +1,20 @@
+<!-- Write a JavaScript function to generate a random number between a given minimum and maximum value. The function should take the minimum and maximum values as parameters and return a random number within that range. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const randomNumber = (min, max) => {
+     return Math.floor(Math.random()*(max - min + 1)) + min
+    };
+    document.write(randomNumber(5,25))
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!-- Write a JavaScript function to reverse a string. The function should take a string as a parameter and return the reversed string. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Reversal</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+//     var string = prompt("Please enter a string");
+//     strLen = string.length
+// var revString = ' ';
+//     for(var i = strLen-1; i>=0; i--){
+//         revString += string[i];
+        
+//     }
+//     document.write(`${string} reverse is ${revString}`);
+
+
+function revString(inputString) {
+    // Convert the string to an array of characters, reverse the array, and join it back into a string
+    const reversedString = inputString.split('').reverse().join('');
+return reversedString;
+}
+
+const originalString = "Hello, World!";
+const reversedString = revString(originalString);
+document.write("Original string: "+ originalString)
+document.write("Reversed  string: "+ reversedString)
+
+</script>
+</html>

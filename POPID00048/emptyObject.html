@@ -1,0 +1,30 @@
+<!-- Write a JavaScript function to check if an object is empty (has no properties). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object is empty or not</title>
+</head>
+<body style="text-align: center;">
+    <div style="display: inline-block;">
+        <button style="display: inline-block padding: 10px 20px;">check</button>
+        <h1>Result</h1>
+    </div>
+
+</body>
+
+<script>
+   
+   let btnCheck = document.querySelector('button');
+   let result = document.querySelector('h1');
+   let user = {
+
+   };
+    
+    btnCheck.addEventListener('click', () => {
+        result.innerText = Object.keys(user).length === 0 ? 'EmptyObject' : 'NotEmpty';
+    })
+</script>
+</html>

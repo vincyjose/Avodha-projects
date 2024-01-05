@@ -1,0 +1,39 @@
+<!-- Write a JavaScript function to check if a given number is positive, negative, or zero. The function should take a number as a parameter and return a string indicating the number's sign.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check number is positive,negative or zero</title>
+</head>
+<body>
+    
+
+
+
+<script>
+    function checkNumberSign(number) {
+    if (number > 0) {
+        return "Positive";
+    } else if (number < 0) {
+        return "Negative";
+    } else {
+        return "Zero";
+    }
+}
+
+var result1 = checkNumberSign(5);
+document.write(result1);
+
+
+// var result2 = checkNumberSign(-8);
+// document.write(result2);  
+
+// var result3 = checkNumberSign(0);
+// document.write(result3);  
+</script>
+</body>
+
+</html>

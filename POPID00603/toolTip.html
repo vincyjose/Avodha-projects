@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip Example</title>
+  <style>
+    /* Style for the tooltip container */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: help;
+    }
+
+    /* Style for the tooltip text */
+    .tooltip::before {
+      content: attr(data-tooltip);  /* Use the data-tooltip attribute as the content */
+      position: absolute;
+      background-color: #333;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Show the tooltip on hover */
+    .tooltip:hover::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Hover over the text to see the tooltip:</p>
+
+  <!-- Apply the tooltip to an element using the "tooltip" class and a "data-tooltip" attribute -->
+  <span class="tooltip" data-tooltip="This is a tooltip">Hover me</span>
+
+</body>
+</html>

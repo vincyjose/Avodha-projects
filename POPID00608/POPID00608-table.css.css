@@ -1,0 +1,24 @@
+table{
+    border: 1px solid rgb(56, 130, 83);
+    background-color: rgb(150, 143, 188);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 20px;
+}
+
+th{
+    background-color: rgb(255, 128, 0);
+    
+    font-style: oblique;
+}
+
+caption {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    text-align: center;
+}

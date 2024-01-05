@@ -1,0 +1,26 @@
+
+<!-- Write a JavaScript program to convert a temperature from Celsius to Fahrenheit. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celcius to farenheit</title>
+</head>
+<body>
+   <input type ="" name="" id="data">C<br>
+   <button onclick="convert()">Convert</button>
+<h1 id="Result"></h1>
+</body>
+
+
+<script>
+    function convert() {
+        var c = document.getElementById("data").value
+        var f = (c * 1.8) + 32 
+       document.getElementById("Result").innerText = `${c} C = ${f} F`;
+    }
+</script>
+</html>

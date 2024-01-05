@@ -1,0 +1,47 @@
+
+
+<!-- changing button styles in css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing button styles in css
+    </title>
+    <style>
+        #styledButton{
+            padding: 10px;
+            font-size: 16px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #styledButton:hover{
+            background-color: green;
+        }
+ 
+ #styledButton:active{
+    background-color: yellow;
+ }
+ </style>
+</head>
+<body>
+    <h1>DYNAMIC BUTTON STYLES</h1>
+ <!-- button with onclick event to change styles  -->
+    <button id="styledButton" onclick="changeButtonStyles()">Click me</button> 
+<script>
+    function changeButtonStyles(){
+       var button = document.getElementById("styledButton");
+
+        // change button styles dynamically
+
+        button.style.background-color = "#e74c3c";
+        button.style.color = "#fff";  
+        button.style.border = "2px solid #c0392b";
+    }
+</script>
+    
+</body>
+</html>

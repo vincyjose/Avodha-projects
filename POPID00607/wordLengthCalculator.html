@@ -1,0 +1,43 @@
+<!-- Word length calculator using html, css and javascript -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word length calculator</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 100px;
+        }
+        #wordInput{
+           padding: 10px;
+           font-size: 20px; 
+        }
+
+        #result{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>WORD LENGTH CALCULATOR</h1>
+    <label for="wordInput">Enter a word: </label>
+    <input type="text" id="wordInput" oninput="calculateWordLength()">
+    <div id="result"></div>
+    <script>
+        function calculateWordLength(){
+            var wordInput=document.getElementById("wordInput").value
+            var wordLength = wordInput.length 
+            var resultElement = document.getElementById("result")
+            resultElement.innerHTML ="The Length of the word is : " + wordLength;
+        }
+    </script>
+</body>
+</html>

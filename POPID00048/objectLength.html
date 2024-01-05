@@ -1,0 +1,40 @@
+<!-- Write a JavaScript function to get the length of an object (number of keys). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length of the Object</title>
+</head>
+<body>
+    
+</body>
+
+
+<script>
+    const myObj = {
+        name: "vincy",
+         age: 35,
+        weight: 54,
+        place: 'ernakulam'
+    };
+
+    function getObjectLength(obj) {
+
+        // Get an array of the object's keys
+       const keys = Object.keys(obj); 
+
+       //REturn the length of the keys array
+    return keys.length;
+    }
+
+    const lengthOfObject = getObjectLength(myObj);
+
+    //document.writeln(myObj);
+    
+
+    document.writeln(lengthOfObject); 
+
+</script>
+</html>
